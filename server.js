@@ -32,4 +32,4 @@ app.get('/start-chapter',(req, res)=>{
 app.get('/report',(req, res)=>{
     res.render('report',{data:report_json})
 });
-app.listen(port, console.log(`Server started on ${port}`));
+app.listen(process.env.PORT || port, console.log(`Server started on ${port}`));
