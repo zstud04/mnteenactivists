@@ -1,0 +1,162 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title MN Teen Activists
+  link(rel='shortcut icon' type='image/png' href='img/logoturqoise2.png')
+  // Bootstrap CSS
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous')
+  script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin='anonymous')
+
+
+  script(src='js/scroll.js')
+  // Custom stylesheets
+
+  // Fonts
+  link(rel='stylesheet' href='https://use.typekit.net/mjt1uzn.css')
+  
+  style
+    include ../styles/main.css
+    include ../styles/owl.css
+//navbar
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light.mnnav.p-0
+  .container-fluid
+    a.navbar-brand(href='index.html')
+      img.d-inline-block.align-text-top.customImgSize.logoimg(src='img/logobw.png' alt='' width='80' height='80')
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNavDropdown.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item.custom-nav
+          a.nav-link.custom-nav(href='/about') About Us
+        li.nav-item.dropdown
+          a#navbarDropdownMenuLink.nav-link( href='#' role='button' data-bs-toggle='dropdown' aria-expanded='true')
+            | Chapters
+          ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+            li
+              a.dropdown-item(href='/start-chapter') Start a Chapter
+            //- li
+            //-   a.dropdown-item(href='#') Another action
+            //- li
+            //-   a.dropdown-item(href='#') Something else here
+        li.nav-item
+          a.nav-link(href='#' ) Take Action
+        li.nav-item
+          a.nav-link(href='#' ) Shop
+        li.nav-item
+          a.nav-link(href='#' ) Donate
+        li.nav-item
+          a#report.nav-link(href='#') Report an Incident
+aside.report
+  .report-title
+    a(href='/report') Report an Incident
+
+
+#mycarousel.carousel.slide(data-ride='carousel')
+  .carousel-inner
+    .carousel-item.active
+      #carousel-container
+        .highlighter-h1.highlighter2.toph1.text-blue
+          h1 Eradicating Injustices
+        .bottomh1.highlighter-h1.highlighter3
+          h1 Across MN
+        p.descriptor.bottomh1
+          | We strive to fight systemic injustices in schools throughout Minnesota, while also amplifying the voices of youth.
+        a.btn.btn-lg.btn-outline-primary.cbutton(href='#' role='button') Learn More
+      img(src='img/jumbobg1.png' alt='First slide')
+    .carousel-item
+      #carousel-container
+        .highlighter-h1.highlighter2.toph1
+          h1 Eradicating sd
+        .bottomh1.highlighter-h1.highlighter3
+          h1 Across MN
+        p.descriptor.bottomh1
+          | We strive to fight systemic injustices in schools throughout Minnesota, while also amplifying the voices of youth.
+        a.btn.btn-lg.btn-outline-primary.cbutton(href='#' role='button') Learn More
+      img(src='img/jumbobg1.png' alt='First slide')
+    a.carousel-control-prev(href='#mycarousel' data-bs-slide='prev')
+      span.carousel-control-prev-icon
+    a.carousel-control-next(href='#mycarousel' data-bs-slide='next')
+      span.carousel-control-next-icon
+// FIGHTING FOR... DIV
+.fistbg
+  .greyjumbo.rellax(data-rellax-speed='2')
+    .jumbotext
+      h2.atextjumbo Fighting For
+      #typetext.atextjumbo
+      #typecursor
+    .subjumbotext
+      h3.highlightedgeneral A Group as Diverse as our Causes
+      p
+        | Our goal is to grow our social justice footprint, all across Minnesota. We want to bring fresh and bold community members to MN Teen Activists to help establish our mission throughout all schools in Minnesota. We need things like: social media, civic engagement, policy/curriculum, finances, etc.
+      a.btn.btn-lg.btn-outline-primary.cbuttonwide(href='#' role='button') Click to Find out More
+  img#protestimg(src='img/fistbg.png' alt='People protesting')
+// TAKE ACTION... DIV
+.takeaction
+  .actiontext
+    h1 Take Action in Your Community
+  .jumbothird.jumboleft(data-rellax-speed='0.5')
+    img.actionicon(src='img/protesticon.png')
+    h2 Events
+    p
+      | There are no upcoming events- Check back later!
+      br
+    a.btn.btn-lg.btn-outline-primary.cbuttonwide.responsivezbutton(href='#' role='button') SEE MORE
+  .jumbothird.jumbocenter(data-rellax-speed='0.5')
+    img.actionicon(src='img/hearticon.png')
+    h2 Start a Chapter
+    p
+      | Start by creating a MN Teen Activist chapter to help bring the change to your school that you want to see. Chapters can be formed in any middle or highschool through the state of Minnesota. Other states may qualify.
+    a.btn.btn-lg.btn-outline-primary.cbuttonwide.responsivezbutton(href='#' role='button') Explore
+  .jumbothird.jumboright(data-rellax-speed='0.5')
+    img.actionicon(src='img/teachericon.png')
+    h2 Join the Team
+    p
+      | We are currently looking for student interns to work with MN Teen Activists headquarter as we expand throughout Minnesota and additional states.
+    a.btn.btn-lg.btn-outline-primary.cbuttonwide.responsivezbutton(href='#' role='button') JOIN TODAY
+  img#mapimg(src='img/mapbg.png')
+// THE RESOURCES YOU NEED... DIV
+.resources.rellax(data-rellax-speed='3')
+  .leftdiv
+    img(src='img/resourcesimg.png')
+    .headwrapper
+      h1
+        | Everything
+        br
+        |  you need
+      p
+        | We are committed to providing changemakers in our community with everything they need to make a real impact and be successful students. Check out the resources we have available
+      a.btn.btn-lg.btn-outline-primary.zbutton(href='#' role='button') View Resources
+  .rightdiv
+    img(src='img/resourcesimg.png')
+    .headwrapper
+      h1
+        | Holding everyone
+        br
+        |  accountable
+      p
+        | Report an incident that has contributed to an unjust or unsafe experience in your school, and our team will ensure that the accountability is measurable and justice is served.
+      a.btn.btn-lg.btn-outline-primary.zbutton(href='#' role='button') Report an incident
+  .leftdiv
+    img(src='img/resourcesimg.png')
+    .headwrapper
+      h1
+        | Keeping up
+        br
+        | With our community
+      p
+        | The needs of our community change every day, and so problems are consistently arising. Find out how we are playing a role in our community. Click the link to explore our recent projects, and actions we&rsquo;ve taken towards systemic justice.
+      a.btn.btn-lg.btn-outline-primary.zbutton(href='#' role='button') View Projects
+// TWEET DIV
+.tweeter
+  h1
+    | &ldquo;Youth voices matter because we are a generation of advocates, activists and innovators who do not have the luxury of waiting to change the world we live in.&rdquo;
+  a.join-cause(href='#') Join the Cause
+include includes/footer.pug
+script(src='js/scroll.js')
+script(type='text/javascript' src='js/typewriter.js')
+script(src='https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js')
+script.
+  var rellax = new Rellax('.rellax');

@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .highlighter-header{
+        background-image: url("../img/highlighter15.png");
+        background-repeat: no-repeat;
+
+        min-height: 14rem;
+        min-width:50vw;
+        background-size: 50vw;
+        background-position: top 38% left 0;
+        background-clip: none;
+        overflow:none;
+        padding:5px;
+        text-align:center;
+        opacity:75%;
+        
+
+    }
+    .scroll-nav.scrolled{
+        color:#707070!important;
+    }
+
+    .highlighter-header h1{
+        font-size:5.4vw;
+
+        margin-top:calc(3.9rem - 0.8%);
+        text-transform:uppercase;
+        font-family: alternate-gothic-condensed-a, sans-serif;
+	    font-weight: 600;
+	    font-style: normal;
+    }
+
+    .headertext{
+        font-family: alternate-gothic-condensed-a, sans-serif;
+        font-weight: 600;
+	    font-style: normal;
+        text-transform:uppercase;
+
+
+    }
+    .ptext{
+        font-family: acumin-pro,sans-serif;
+	    font-weight: 300;
+    }
+
+    /*Media Queries*/
+    
+    /*Medium-desktop*/
+    @media screen and (max-width: 1000px){
+        .highlighter-header{
+            
+            background-size:32rem;
+            background-position:center -100px;
+
+        }
+        .highlighter-header h1{
+            padding-top:15px;
+        }
+
+    }
+    /*Small-desktop*/
+    @media screen and (max-width:920px){
+        .highlighter-header{
+            background-position: top 38% left 0;
+            background-size:70vw;
+            min-width:70vw;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+            
+            left:0;
+            right:0;
+            width:100px;
+        }
+        .highlighter-header h1{
+            font-size:3em;
+            padding-top:10px;
+        }
+    }
+    /*XS desktop*/
+    @media screen and (max-width:600px){
+        .highlighter-header{
+            background-size:25rem;
+            background-position:center -70px;
+            min-width:80vw;
+                   
+            
+        }
+        .highlighter-header h1{
+            margin-top:60px;
+            padding-top:0px;
+        }
+
+    }
+    /*mobile-larger*/
+    @media screen and (max-width:500px){
+        .highlighter-header{
+            background-size:24rem;
+            background-position:center -60px;
+            min-width:24rem;
+        }
+    }
+    @media screen and (max-width:400px){
+        .highlighter-header{
+            background-size:24rem;
+            background-position:center -35px;
+            font-size:0.8em;
+            min-width:24rem;
+
+        }
+        .highlighter-header h1{
+            margin-top:95px;
+        }
+    }
+}

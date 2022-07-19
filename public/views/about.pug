@@ -1,0 +1,23 @@
+extends general_layout.pug 
+include mixins/titlediv.pug
+include mixins/leftaside.pug
+include mixins/rightaside.pug
+include mixins/focalbg.pug
+include mixins/threepart.pug
+
+block body
+    +title-div(data["header"])
+    include includes/modulars.pug
+
+    //Our Team Section
+    section(class="h-fit bg-near-black place-items-center text-center")
+        h1(class="text-[4em] headertext text-near-white mt-12") Our Team
+        p(class="ptext text-[1.5em] text-mid-gray mt-[0.2em]") Something about meeting the team
+        span(class="grid grid-cols-3 grid-rows-3 gap-11 mt-[3em] w-[80%] mx-auto ")
+            each val in data["data"]["team_members"]
+                span
+                    img(src="../../img/defaultuser.png" class="w-[8em] mx-auto rounded-full")
+                    p(class="text-[1.8em] headertext text-near-white mt-10")=val["name"]
+                    if val["title"]!=""
+                        p(class="text-[1.2em] headertext text-aqua-blue")=val["title"]
+                //span=val["title"]

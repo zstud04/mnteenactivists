@@ -1,0 +1,16 @@
+extends general_layout.pug 
+include mixins/titlediv.pug
+include mixins/leftaside.pug
+include mixins/rightaside.pug
+include mixins/focalbg.pug
+include mixins/formelement.pug
+include mixins/threepart.pug
+
+block body
+    +title-div(data["header"])
+    include includes/modulars.pug
+
+    
+    //- each val in data["sections"]
+
+    //-     +#{val["source"]}(val["header"],val["subheader"],val["body"],val["img"],val["button_text"],val["button_href"])

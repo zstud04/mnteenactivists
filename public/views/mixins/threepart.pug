@@ -1,0 +1,7 @@
+mixin three-part(modules)
+    section(class="flex small-center:flex-col mt-[3em]")
+        each module in modules 
+            section(class="bg-near-black rounded-lg")
+                h1(class="text-white text-[4em]  headertext") #{module["header"]}
+                h2(class="text-aqua-blue text-[2em]") #{module["subheader"]}
+                p(class="ptext text-[1.2em] text-mid-gray mt-[1em] px-20 small-center:px-5") #{module["body"]}

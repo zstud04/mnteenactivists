@@ -1,0 +1,14 @@
+include ../mixins/titlediv.pug
+include ../mixins/leftaside.pug
+include ../mixins/rightaside.pug
+include ../mixins/focalbg.pug
+include ../mixins/formelement.pug
+include ../mixins/threepart.pug
+
+each val in data["sections"]
+        if val["source"] != "form-element"
+            +#{val["source"]}(val["header"],val["subheader"],val["body"],val["img"],val["button_text"],val["button_href"])
+        else if val["source"] == "three-part"
+            +#{val["source"]}(val["modules"])
+        else 
+            +#{val["source"]}(val["header"],val["body"],val["instruction_header"],val["instruction_body"],val["form_items"],val["action"])

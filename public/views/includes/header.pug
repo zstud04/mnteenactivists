@@ -1,0 +1,31 @@
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light.mnnav.p-0
+  .container-fluid
+    a.navbar-brand(href='/')
+      img.d-inline-block.align-text-top.customImgSize.logoimg(src='img/logobw.png' alt='' width='80' height='80')
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNavDropdown.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item.custom-nav
+          a.nav-link.scroll-nav.custom-nav(href='/about' class="text-white" ) About Us
+        li.nav-item.dropdown
+          a#navbarDropdownMenuLink.nav-link.scroll-nav(class="text-white" href='#' role='button' data-bs-toggle='dropdown' aria-expanded='true')
+            | Chapters
+          ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+            li
+              a.dropdown-item(href='/start-chapter') Start a Chapter
+            //- li
+            //-   a.dropdown-item(href='#') Another action
+            //- li
+            //-   a.dropdown-item(href='#') Something else here
+        li.nav-item
+          a.nav-link.scroll-nav(href='#' class="text-white") Take Action
+        li.nav-item
+          a.nav-link.scroll-nav(href='#' class="text-white") Shop
+        li.nav-item
+          a.nav-link.scroll-nav(href='#' class="text-white") Donate
+        li.nav-item
+          a#report.nav-link.scroll-nav(href='/report' class="text-white") Report an Incident
+aside.report
+  .report-title
+    a(href='/report' class="text-white") Report an Incident

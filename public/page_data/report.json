@@ -1,0 +1,61 @@
+{
+    "header":"Report an Incident",
+    "sections":[
+        {
+            "source":"form-element",
+            "header":"Expect Accountability",
+            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "instruction_header":"Tell Us What Happened",
+            "instruction_body":"Give us some information on the incident- if you wish to remain anonymous, don't fill out the first three boxes. We will NEVER disclose your identity in any case",
+            "form_items":[
+                {
+                    "id":"inputFirstName",
+                    "label":"First Name",
+                    "meta":"input",
+                    "type":"text",
+                    "name":"firstname",
+                    "placeholder":"First Name"
+                    
+                },
+                
+                {
+                    "id":"inputLastName",
+                    "label":"Last Name",
+                    "meta":"input",
+                    "type":"text",
+                    "name":"lastname",
+                    "placeholder":"Last Name"
+                },
+                {
+                    "id":"inputEmail",
+                    "label":"Email Address",
+                    "meta":"input",
+                    "type":"email",
+                    "name":"email",
+                    "placeholder":"email@example.com"
+                },
+                
+
+                {
+                    "id":"inputSchoolName",
+                    "label":"Perpetrator(s) (Who caused the harm?)",
+                    "meta":"input",
+                    "type":"text",
+                    "name":"perpetrator",
+                    "placeholder":""
+                },
+                {
+                    "id":"inputDetails",
+                    "label":"Give us your account of what happened",
+                    "meta":"textarea",
+                    "type":"text",
+                    "name":"details",
+                    "placeholder":""
+
+                }
+            ],
+            "action":"/report-submit"
+        }
+    ]
+
+}
