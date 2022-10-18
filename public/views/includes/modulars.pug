@@ -4,11 +4,22 @@ include ../mixins/rightaside.pug
 include ../mixins/focalbg.pug
 include ../mixins/formelement.pug
 include ../mixins/threepart.pug
+include ../mixins/floatingcomponents.pug
 
 each val in data["sections"]
-        if val["source"] != "form-element"
-            +#{val["source"]}(val["header"],val["subheader"],val["body"],val["img"],val["button_text"],val["button_href"])
-        else if val["source"] == "three-part"
-            +#{val["source"]}(val["modules"])
-        else 
-            +#{val["source"]}(val["header"],val["body"],val["instruction_header"],val["instruction_body"],val["form_items"],val["action"])
+
+        
+    if val["source"] != "form-element" & val["source"] !="three-part"
+        +#{val["source"]}(val["header"],val["subheader"],val["body"],val["img"],val["button_text"],val["button_href"])
+    else if val["source"]=="title-div"
+        +#{val["source"]}(val["header"])
+    else if val["source"]=="form-element"
+        +#{val["source"]}(val["header"],val["body"],val["instruction_header"],val["instruction_body"],val["form_items"],val["action"])
+    else if val["source"] == "three-part"
+        +#{val["source"]}(val["header"],val["body"])
+    else if val["source"]=="background-splash"
+        +#{val["source"]}(val["header"],val["subheader"])
+    else if val["source"]=="shop-gallery"
+        +#{val["source"]}(val["shop_items"])
+    else if val["source"]=="grid"
+        +#{val["source"]}(val["grid"])

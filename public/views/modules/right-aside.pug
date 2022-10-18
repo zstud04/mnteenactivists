@@ -1,0 +1,10 @@
+section(class="text-right large-uncenter:mr-[6em] mt-[8em] small-center:text-center mb-[8em] width-[100%]")
+    section(class="flex small-center:block width-[100%]")
+        img(class="object-cover h-50 w-[23em] large-dt:mr-[12em] medium-dt:mr-[8em] large-uncenter:ml-[6em] mt-[2em] small-center:mx-auto small-center:mb-5" src="../../img/"+img)
+        section
+            h1(class="text-[4em] headertext text-near-white" id="header") #{header}
+            h2(class="text-[2em] headertext text-aqua-blue" id="subheader") #{subheader}
+            p(class="ptext text-[1em] text-mid-gray mt-[1em] small-center:px-20" id="body") #{body}
+            if button_text
+                a.btn.btn-lg.btn-outline-primary.zbutton(href=button_href role='button' class="mt-4" id="button") #{button_text}
+                    

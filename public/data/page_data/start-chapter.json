@@ -1,0 +1,79 @@
+{
+    "header":"Start a Chapter",
+    "sections":[
+        {
+            "source":"title-div",
+            "header":"Start a Chapter"
+        },
+        
+        
+       
+        {
+            "source":"form-element",
+            "header":"Take the Next Step",
+            "body":"Start a chapter in your school today, and become a part of the movement",
+            "instruction_header":"Apply for a Chapter",
+            "instruction_body":"Give us some basic information about yourself and your school",
+            "form_items":[
+                [
+                    {
+                        "id":"inputFirstName",
+                        "label":"First Name",
+                        "meta":"input",
+                        "type":"text",
+                        "name":"firstname",
+                        "placeholder":"First Name"
+                        
+                    },
+                    
+                    {
+                        "id":"inputLastName",
+                        "label":"Last Name",
+                        "meta":"input",
+                        "type":"text",
+                        "name":"lastname",
+                        "placeholder":"Last Name"
+                    },
+                    {
+                        "id":"inputEmail",
+                        "label":"Email Address",
+                        "meta":"input",
+                        "type":"email",
+                        "name":"email",
+                        "placeholder":"email@example.com"
+                    },
+                    
+    
+                    {
+                        "id":"inputSchoolName",
+                        "label":"School Name",
+                        "meta":"input",
+                        "type":"text",
+                        "name":"perpetrator",
+                        "placeholder":""
+                    },
+                    {
+                        "id":"inputDetails",
+                        "label":"How do you believe your school could benefit from MN Teen Activists' Mission? ",
+                        "meta":"textarea",
+                        "type":"text",
+                        "name":"details",
+                        "placeholder":""
+    
+                    }
+                ]
+                
+            ],
+            "action":"/chapter-start-submit"
+        },
+        {
+            "source":"focal-bg",
+            "header":"Our Vision",
+            "subheader":"Bringing MN Teen Activists to Schools",
+            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut a",
+            "button_text":"Check this Out",
+            "button_href":"#"
+
+        }
+    ]
+}

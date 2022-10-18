@@ -1,0 +1,34 @@
+
+section(class="text-left large-uncenter:ml-[6em] mt-[8em] small-center:text-center")
+    section(class="flex small-dt:flex-col xs-dt:flex-col xs-dt:px-10")
+        section(class="w-[100%] large-dt:w-[40%] medium-dt:w-[35%]")
+            h1(class="text-[4em] headertext text-near-white") #{header}
+            p(class="ptext text-[1.2em] text-mid-gray mt-[1em] small-center:px-2 w-[60%] small-center:text-center small-center:mx-auto") #{body}
+        section(class="text-center w-[50%] bg-[#2b2b2a] p-8 rounded-lg large-dt:ml-[6em] medium-dt:ml-[6em] large-uncenter:mr-[6.5em] small-center:mx-auto small-center:w-[90%] small-center:mt-[3em] mb-[2em]")
+            h2(class="text-[3em] headertext text-aqua-blue") #{instruction_header}
+            p(class="ptext text-[1em] text-mid-gray mt-[1em] w-[60%] mx-auto") #{instruction_body}
+            form(class="form-element flex flex-col " id="checkout-form" action=action data-type=formType)
+                each tab in form_items
+                    each item in tab
+                        label(for=item["id"] class="form-element-label text-mid-gray ptext mt-[1.5em] mb-[1em]") #{item["label"]}
+                        if item["meta"] == "input"
+                            input(type=item["type"] name=item["name"] id=item["id"] class="form-element-input w-[70%] mx-auto px-6 py-2 rounded-md" placeholder=item["placeholder"] )
+                        else if item["meta"]=="select"
+                            select(class="form-element-select w-[70%] mx-auto p-2 rounded-md text-mid-gray ptext" id=item["id"] name=item["name"])
+                                each option in item["options"]
+                                    option(class="form-element-option text-mid-gray ptext" value=option["value"]) #{option["label"]}
+                        else if item["meta"]=="textarea"
+                            textarea(class="w-[70%] mx-auto p-2 rounded-md" id=item["id"] name=item["name"] cols="40" rows="10")
+                        else if item["meta"]=="payment"
+                        
+                            label(class="form-element-label text-mid-gray ptext mt-[1.5em] mb-[1em]") Payment Info
+                            input(class="form-element-input w-[70%] mx-auto px-6 py-2 rounded-md " type='text' name='city' placeholder='City')
+                            input(class="form-element-input w-[70%] mx-auto px-6 py-2 rounded-md mt-[1.5em]" type='text' name='address' placeholder='Address')
+                            label(class="form-element-label text-mid-gray ptext mt-[1.5em] mb-[1em]") Donation Amount
+                            input(class="form-element-input w-[70%] mx-auto px-6 py-2 rounded-md mt-[1.5em] mb-[3em]" name="amount" type="number" min="0.00" max="10000.00" step="1" placeholder="$10.00")
+                            #card-element(class="mb-[2em]")
+                            #card-errors(role='alert')
+
+                button.btn.btn-lg.btn-outline-primary.zbutton(role='button' type="submit" class="mt-6 w-[70%] mx-auto") Submit
+
+

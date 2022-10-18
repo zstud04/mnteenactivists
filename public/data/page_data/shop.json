@@ -1,0 +1,16 @@
+{
+    "header":"Shop",
+    "sections":[
+        
+        {
+            "source":"background-splash",
+            "header":"MN Teen Activists Shop",
+            "subheader":"See what items we have available for sale and support local community efforts."
+
+        },
+        {
+            "source":"shop-gallery",
+            "sql-req":"shop"
+        }
+    ]
+}

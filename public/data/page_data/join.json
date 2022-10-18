@@ -1,0 +1,68 @@
+{
+    "header":"Join the Team",
+    "sections":[
+        
+        {
+            "source":"form-element",
+            "header":"Do you want to join MN Teen Activists?",
+            "body":"Our goal is to collaborate with our peers, in order to create transformative changes in our communities as well as opportunities for student leadership. We are committed to creating spaces for Generation Z who are the leaders of the present and the future. It is important that MNTA amplifies voices of youth, particularly pertaining to the issues and decisions that affect us directly. We want young people to join the team, who aren’t afraid to pull up their own seat to the table and demand for policy/curriculum shifts, civic engagement, diversity/equity/inclusion, justice/accountability, and overall showing up for their peers when students are under attack.",
+            "instruction_header":"Start your Application Today",
+            "instruction_body":"Fill out this form with your basic information and we'll get back to you as soon as possible.",
+            "tabs":[
+                
+                [
+                    {
+                        "id":"inputFirstName",
+                        "label":"First Name",
+                        "meta":"input",
+                        "type":"text",
+                        "name":"firstname",
+                        "placeholder":"First Name"
+                        
+                    },
+                    
+                    {
+                        "id":"inputLastName",
+                        "label":"Last Name",
+                        "meta":"input",
+                        "type":"text",
+                        "name":"lastname",
+                        "placeholder":"Last Name"
+                    },
+                    {
+                        "id":"inputEmail",
+                        "label":"Email Address",
+                        "meta":"input",
+                        "type":"email",
+                        "name":"email",
+                        "placeholder":"email@example.com"
+                    },
+                    
+    
+                    {
+                        "id":"inputSchoolName",
+                        "label":"School Name (if you are currently attending a school--High School or College)",
+                        "meta":"input",
+                        "type":"text",
+                        "name":"school",
+                        "placeholder":""
+                    },
+                    {
+                        "id":"inputBio",
+                        "label":"Why do you want to work for MN Teen Activists?",
+                        "meta":"textarea",
+                        "type":"text",
+                        "name":"bio",
+                        "placeholder":""
+    
+                    }
+                ]
+
+            ],
+           
+            "action":"/report-submit"
+        }
+    ]
+
+
+}

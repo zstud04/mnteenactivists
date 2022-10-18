@@ -1,0 +1,59 @@
+{
+    "header":"Contact",
+    "sections":[
+        {
+            "source":"title-div",
+            "header":"Contact Us"
+        },
+        {
+            "source":"form-element",
+            "header":"Get in Touch",
+            "body": "Reach out to us with any inquiries or general questions. We'll try and get back to you as soon as possible!",
+            "instruction_header":"Leave us a Message",
+            "instruction_body":"Leave us a quick message and let's start the conversation.",
+            "form_items":[
+                [
+                {
+                    "id":"inputFirstName",
+                    "label":"First Name",
+                    "meta":"input",
+                    "type":"text",
+                    "name":"firstname",
+                    "placeholder":"First Name"
+                    
+                },
+                
+                {
+                    "id":"inputLastName",
+                    "label":"Last Name",
+                    "meta":"input",
+                    "type":"text",
+                    "name":"lastname",
+                    "placeholder":"Last Name"
+                },
+                {
+                    "id":"inputEmail",
+                    "label":"Email Address",
+                    "meta":"input",
+                    "type":"email",
+                    "name":"email",
+                    "placeholder":"email@example.com"
+                },
+                {
+                    "id":"inputMessage",
+                    "label":"Message",
+                    "meta":"textarea",
+                    "type":"text",
+                    "name":"bio",
+                    "placeholder":"Leave a Message"
+
+                }
+            ]
+            ],
+            "action":"/form-submit",
+            "formType":"contact"
+        }
+    ]
+
+
+}

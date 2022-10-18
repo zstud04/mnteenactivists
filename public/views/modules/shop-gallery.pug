@@ -1,0 +1,12 @@
+section 
+    div(class="flex large-uncenter:flex-wrap flex-col large-uncenter:flex-row small-center:justify-center large-uncenter:mx-5 py-10 w-[100%]")
+        each item in shop
+            div(class="large-uncenter:w-[30%] mb-4 bg-[#333] py-5 px-4 rounded-md large-uncenter:mx-1 small-center:w-[80%] small-center:mx-auto ")
+                a(class="text-[2.3em] headertext text-near-white" href="#") #{item["name"]}
+                a(href="#")
+                    img(class="object-cover min-w-[16%] my-3" id="img" src="../../img/"+item["img_route"])
+                h2(class="text-[2em] headertext text-aqua-blue") #{item["price_string"]}
+                //p(class="ptext text-[0.9em] text-mid-gray mt-[1em]") #{item["description"]}
+                p(class="ptext text-[1.2em] text-mid-gray mt-[1em]") Currently out of stock
+        else 
+            h2 No shop items found!

@@ -1,0 +1,54 @@
+{
+    "header":"Donate",
+    "sections":[
+        {
+            "source":"title-div",
+            "header":"Donate"
+        },
+        {
+            "source":"form-element",
+            "header":"Make a Contribution Today",
+            "body":"Make a gift today to contribute to the fight against racism in your community. MN Teen Activists is a 501c3 nonprofit. All donations to MN Teen Activists are tax deductible. Our donations have aided in a variety of projects, from rebuilding our community to sponsoring black artists.",
+            "instruction_header":"Choose an Amount",
+            "instruction_body":"Make a donation today to aid in the grassroots fight against racial injustice.",
+            "form_items":[
+                [
+                    {
+                        "id":"inputFirstName",
+                        "label":"First Name",
+                        "meta":"input",
+                        "type":"text",
+                        "name":"firstname",
+                        "placeholder":"First Name"
+                        
+                    },
+                    
+                    {
+                        "id":"inputLastName",
+                        "label":"Last Name",
+                        "meta":"input",
+                        "type":"text",
+                        "name":"lastname",
+                        "placeholder":"Last Name"
+                    },
+                    {
+                        "id":"inputEmail",
+                        "label":"Email Address",
+                        "meta":"input",
+                        "type":"email",
+                        "name":"email",
+                        "placeholder":"email@example.com"
+                    },
+                    {
+                        "id":"inputCard",
+                        "meta":"payment"
+                    }
+                ]
+                
+            ],
+            "action":"/charge-donation",
+            "formType":"donations"
+        }
+    ]
+
+}

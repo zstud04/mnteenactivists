@@ -21,7 +21,7 @@ head
     include ../styles/main.css
     include ../styles/owl.css
 //navbar
-nav.navbar.fixed-top.navbar-expand-lg.navbar-light.mnnav.p-0
+nav.navbar.fixed-top.navbar-expand-xl.navbar-light.mnnav.p-0
   .container-fluid
     a.navbar-brand(href='index.html')
       img.d-inline-block.align-text-top.customImgSize.logoimg(src='img/logobw.png' alt='' width='80' height='80')
@@ -42,11 +42,13 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-light.mnnav.p-0
             //- li
             //-   a.dropdown-item(href='#') Something else here
         li.nav-item
-          a.nav-link(href='#' ) Take Action
+          a.nav-link(href='/take-action' ) Take Action
         li.nav-item
-          a.nav-link(href='#' ) Shop
+          a.nav-link(href='/shop' ) Shop
         li.nav-item
-          a.nav-link(href='#' ) Donate
+          a.nav-link(href='/donate' ) Donate
+        li.nav-item
+          a.nav-link(href='contact' ) Contact
         li.nav-item
           a#report.nav-link(href='#') Report an Incident
 aside.report
@@ -64,17 +66,17 @@ aside.report
           h1 Across MN
         p.descriptor.bottomh1
           | We strive to fight systemic injustices in schools throughout Minnesota, while also amplifying the voices of youth.
-        a.btn.btn-lg.btn-outline-primary.cbutton(href='#' role='button') Learn More
+        a.btn.btn-lg.btn-outline-primary.cbutton(href='/about' role='button') Learn More
       img(src='img/jumbobg1.png' alt='First slide')
     .carousel-item
       #carousel-container
         .highlighter-h1.highlighter2.toph1
-          h1 Eradicating sd
+          h1 See Some of Our 
         .bottomh1.highlighter-h1.highlighter3
-          h1 Across MN
+          h1 Past Projects
         p.descriptor.bottomh1
-          | We strive to fight systemic injustices in schools throughout Minnesota, while also amplifying the voices of youth.
-        a.btn.btn-lg.btn-outline-primary.cbutton(href='#' role='button') Learn More
+          | We've been working hard to better our local Minnesota communities and create meaningful change
+        a.btn.btn-lg.btn-outline-primary.cbutton(href='/projects' role='button') Learn More
       img(src='img/jumbobg1.png' alt='First slide')
     a.carousel-control-prev(href='#mycarousel' data-bs-slide='prev')
       span.carousel-control-prev-icon
@@ -96,64 +98,55 @@ aside.report
 // TAKE ACTION... DIV
 .takeaction
   .actiontext
-    h1 Take Action in Your Community
+    h1 Take The Next Step
   .jumbothird.jumboleft(data-rellax-speed='0.5')
     img.actionicon(src='img/protesticon.png')
     h2 Events
     p
-      | There are no upcoming events- Check back later!
+      | There are no upcoming events
       br
     a.btn.btn-lg.btn-outline-primary.cbuttonwide.responsivezbutton(href='#' role='button') SEE MORE
   .jumbothird.jumbocenter(data-rellax-speed='0.5')
-    img.actionicon(src='img/hearticon.png')
+    img.actionicon(src='img/teachericon.png')
     h2 Start a Chapter
     p
       | Start by creating a MN Teen Activist chapter to help bring the change to your school that you want to see. Chapters can be formed in any middle or highschool through the state of Minnesota. Other states may qualify.
-    a.btn.btn-lg.btn-outline-primary.cbuttonwide.responsivezbutton(href='#' role='button') Explore
+    a.btn.btn-lg.btn-outline-primary.cbuttonwide.responsivezbutton(href='/start-chapter' role='button') Explore
   .jumbothird.jumboright(data-rellax-speed='0.5')
-    img.actionicon(src='img/teachericon.png')
+    img.actionicon(src='img/hearticon.png')
     h2 Join the Team
     p
-      | We are currently looking for student interns to work with MN Teen Activists headquarter as we expand throughout Minnesota and additional states.
+      | We are currently looking for student interns to work with MN Teen Activists headquarter as we expand throughout Minnesota and additional states. Click the link below to view job descriptions and more information on how to join the team.
     a.btn.btn-lg.btn-outline-primary.cbuttonwide.responsivezbutton(href='#' role='button') JOIN TODAY
   img#mapimg(src='img/mapbg.png')
 // THE RESOURCES YOU NEED... DIV
-.resources.rellax(data-rellax-speed='3')
+.resources.rellax(data-rellax-speed='2')
   .leftdiv
     img(src='img/resourcesimg.png')
     .headwrapper
       h1
-        | Everything
+        | Report
         br
-        |  you need
+        |  an Incident
       p
-        | We are committed to providing changemakers in our community with everything they need to make a real impact and be successful students. Check out the resources we have available
-      a.btn.btn-lg.btn-outline-primary.zbutton(href='#' role='button') View Resources
+        | Report an incident that has contributed to an unjust or unsafe experience in your school, and our team will ensure that the accountability is measurable and justice is served.
+      a.btn.btn-lg.btn-outline-primary.zbutton(href='#' role='button') Report an Incident
+  
   .rightdiv
     img(src='img/resourcesimg.png')
     .headwrapper
       h1
-        | Holding everyone
+        | MN Teen Activists
         br
-        |  accountable
+        | Blog
       p
-        | Report an incident that has contributed to an unjust or unsafe experience in your school, and our team will ensure that the accountability is measurable and justice is served.
-      a.btn.btn-lg.btn-outline-primary.zbutton(href='#' role='button') Report an incident
-  .leftdiv
-    img(src='img/resourcesimg.png')
-    .headwrapper
-      h1
-        | Keeping up
-        br
-        | With our community
-      p
-        | The needs of our community change every day, and so problems are consistently arising. Find out how we are playing a role in our community. Click the link to explore our recent projects, and actions we&rsquo;ve taken towards systemic justice.
-      a.btn.btn-lg.btn-outline-primary.zbutton(href='#' role='button') View Projects
+        | Check and subscribe out our blog to see what we've been up to, and what our plans are for the future. Updated Monday of every week. Beginning 11/01/22
+      a.btn.btn-lg.btn-outline-primary.zbutton(href='#' role='button') View Blog
 // TWEET DIV
 .tweeter
   h1
     | &ldquo;Youth voices matter because we are a generation of advocates, activists and innovators who do not have the luxury of waiting to change the world we live in.&rdquo;
-  a.join-cause(href='#') Join the Cause
+  a.join-cause(href='#') Sign Up for Updates
 include includes/footer.pug
 script(src='js/scroll.js')
 script(type='text/javascript' src='js/typewriter.js')

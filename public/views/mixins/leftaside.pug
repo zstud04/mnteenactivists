@@ -1,11 +1,12 @@
 mixin left-aside(header, subheader,body, img,button_text,button_href)
-    section(class="text-left large-uncenter:ml-[6em] mt-[8em] small-center:text-center")
-        section(class="flex small-center:flex-col")
+    section(class="text-left large-uncenter:ml-[6em] mt-[8em] small-center:text-center mb-[8em]" id="test")
+        section(class="flex small-center:flex-col w-[100%]")
             section(class="small-center:order-2")
-                h1(class="text-[4em] headertext text-near-white") #{header}
-                h2(class="text-[2em] headertext text-aqua-blue") #{subheader}
-                p(class="ptext text-[1em] text-mid-gray mt-[1em] small-center:px-20") #{body}
-            img(class="object-cover h-50 w-[23em] large-dt:ml-[12em] medium-dt:ml-[8em] large-uncenter:mr-[6.5em] mt-[2em] small-center:mx-auto small-center:order-1 small-center:mb-5" src="../../img/"+img)
-            if button_text
-                    a.btn.btn-lg.btn-outline-primary.zbutton(href=button_href role='button' class="mt-4") #{button_text}
-                     
+                h1(class="text-[4em] headertext text-near-white" id="header") #{header}
+                h2(class="text-[2em] headertext text-aqua-blue" id="subheader") #{subheader}
+                p(class="ptext text-[1em] leading-relaxed text-mid-gray mt-[1em] small-center:px-20" id="body") #{body}
+                if button_text
+                    a.btn.btn-lg.btn-outline-primary.zbutton(role='button' class="mt-4" id="button") #{button_text}
+            img(class="object-cover h-50 w-[23em] large-dt:ml-[12em] medium-dt:ml-[8em] large-uncenter:mr-[6.5em] mt-[2em] small-center:mx-auto small-center:order-1 small-center:mb-5" id="img" src="../../img/"+img)
+            
+                        

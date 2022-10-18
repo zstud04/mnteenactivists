@@ -5,9 +5,13 @@ include mixins/rightaside.pug
 include mixins/focalbg.pug
 include mixins/threepart.pug
 
-block body
-    +title-div(data["header"])
-    include includes/modulars.pug
+
+block body 
+    div(id="container")
+    script(src='../js/dom_insert.js')
+        
+    //- +title-div(data["header"])
+    //- include includes/modulars.pug
 
     //Our Team Section
     section(class="h-fit bg-near-black place-items-center text-center")

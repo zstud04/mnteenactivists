@@ -1,0 +1,29 @@
+include ../includes/head.pug
+include includes/admin_header.pug
+body(class="bg-near-black fixed flex justify-center")
+    div(class=" w-[70%] rounded-md text-center mt-[6em] text-aqua-blue ")
+        h1.mt-2.headertext(class="text-[3em] ") Add a Module
+        ul.mt-10
+        if modules
+            each item in modules 
+                button.btn.btn-lg.btn-outline-primary.zbutton( role='button' class="mx-[1em] comp_button" data-module-type=item['display_name']) #{item["display_name"]}
+                
+        else
+            h2 modules loading, please refresh...
+            
+    div(class="bg-[#222] w-[25%] pl-[1em] h-[30em] py-5 right-[1em] float-right mt-[18em] rounded-md text-center absolute overflow-y-auto")
+        h1.mt-2.headertext(class="text-[3em] text-aqua-blue text-center") Module Settings
+        //- form(method="POST" action="/update_vals" id="comp_form")
+        div(id="fields_container") 
+            //- button.btn.btn-lg.btn-outline-primary.zbutton( role='button' class="mx-[1em] mt-3 comp_button" type="submit") Update
+    div(class="flex-row flex mt-[18em] w-[60%] max-h-[900px] overflow-y-auto absolute ml-[-20%]")
+        div(class="w-[100%] h-max")
+            block content
+
+
+script(type='text/javascript' src='../../js/edit_handler.js')
+script(type='text/javascript' src='../../js/component.js')
+script(type='text/javascript' src='../../js/module.js')
+script(type='text/javascript' src='../../js/pageedit.js')
+script(type='text/javascript' src='../../js/input_group.js')
+

@@ -1,0 +1,23 @@
+mixin floating-components(header, body, instruction_header, instruction_body, form_items, action)
+    section(class="text-left large-uncenter:ml-[6em] mt-[8em] small-center:text-center")
+        section(class="flex small-dt:flex-col")
+            section(class="w-[100%]")
+                h1(class="text-[4em] headertext text-near-white") #{header}
+                p(class="ptext text-[1em] text-mid-gray mt-[1em] small-center:px-20 w-[60%] small-center:text-center small-center:mx-auto") #{body}
+            section(class="text-center w-[50%] bg-[#2b2b2a] p-8 rounded-lg large-dt:ml-[6em] medium-dt:ml-[6em] large-uncenter:mr-[6.5em] small-center:mx-auto small-center:w-[60%] small-center:mt-[3em]")
+                h2(class="text-[3em] headertext text-aqua-blue") #{instruction_header}
+                p(class="ptext text-[1em] text-mid-gray mt-[1em] w-[60%] mx-auto") #{instruction_body}
+                form(class="form-element flex flex-col " method="POST" action=action)
+                    each item in form_items 
+                        label(for=item["id"] class="form-element-label text-mid-gray ptext mt-[1.5em] mb-[1em]") #{item["label"]}
+                        if item["meta"] == "input"
+                            input(type=item["type"] name=item["name"] id=item["id"] class="form-element-input w-[70%] mx-auto px-6 py-2 rounded-md" placeholder=item["placeholder"] )
+                        else if item["meta"]=="select"
+                            select(class="form-element-select w-[70%] mx-auto p-2 rounded-md text-mid-gray ptext" id=item["id"] name=item["name"])
+                                each option in item["options"]
+                                    option(class="form-element-option text-mid-gray ptext" value=option["value"]) #{option["label"]}
+                        else if item["meta"]=="textarea"
+                            textarea(class="w-[70%] mx-auto p-2 rounded-md" id=item["id"] name=item["name"] cols="40" rows="10")
+                    button.btn.btn-lg.btn-outline-primary.zbutton(href=button_href role='button' type="submit" class="mt-6 w-[70%] mx-auto") Submit
+
+

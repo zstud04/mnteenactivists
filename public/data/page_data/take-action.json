@@ -1,0 +1,30 @@
+{
+    "header":"Take Action",
+    "sections":[
+        {
+            "source":"title-div",
+            "header":"Take Action"
+        },
+        {
+            "source":"left-aside",
+            "header":"Our Projects",
+            "subheader":"Working to Improve Our Community",
+            "body":"MN Teen Activists has done extensive work to improve the community in tangible ways, such as this project and this project... See more here and learn how you can get involved.",
+            "img":"missionstatement.jpeg",
+            "button_text":"Our Projects",
+            "button_href":"/projects"
+        },
+        {
+            "source":"right-aside",
+            "header":"Register to Vote",
+            "subheader":"Make an Impact",
+            "body":"MN Teen Activists has done extensive work to improve the community in tangible ways, such as this project and this project... See more here and learn how you can get involved.",
+            "img":"missionstatement.jpeg",
+            "button_text":"Register Now",
+            "button_href":"#"
+        }
+    ]
+
+}
+
+

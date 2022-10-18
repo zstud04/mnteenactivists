@@ -1,0 +1,52 @@
+{
+    "header":"About Us",
+    "sections":[
+        {
+            "source":"title-div",
+            "header":"About Us"
+        },
+        {
+            "source":"left-aside",
+            "header":"Youth Leading Minnesota",
+            "body":"Minnesota Teen Activists was established May 23rd, 2020 just two days before the death of George Floyd. The reason in which Aaliyah Murray, Gabby H., Yassin Bah originally founded the organziation is because the immense amount of injustices, such as: racism, homophobia, sexual assult, and slamophobia, that they seen occur within their local schools and all across the state of Minnesota. Rather than complaining about poor administration accountability and no justice for students, these students decided to stand up and fight back while making students human rights a priority! Minnesota Teen Activists soon became the leading youth-led organization, making its ranks across the Twin Cities -- Greater Minnesota Area, and eventually around the world. As Minneapolis experienced several different tragedies like the death of George Floyd, Daunte Wright and Amir Locke, Minnesota Teen Activists responded on the front lines and aided in the civil unrest and distress that occurred amongst thousands of community members. While fighting for justice and peace in the community, members of Minnesota Teen Activists maintained their presence in the schools and adequately responded to incidents occurring where students felt unsafe while in the classroom.",
+            "img":"missionstatement.jpeg"
+        },
+        {
+            "source":"right-aside",
+            "header":"MAKING TRANSFORMATIVE CHANGES",
+            "subheader":"",
+            "body":"Since Minnesota Teen Activists was first established in 2020 students across the state of Minnesota have shown up in tremendous ways and those young people have been at the forefront of the transformative changes that we have desired to see for so long. It is our aim to amplify and activate the existing student voices that lead in their schools, we desire to provide our resources for student leaders to further their aim and desire to change and to never be their voice. So far, we have helped initiate several movements in schools pushing for equity, anti-racism, funding the arts, students rights, public safety, ending gun violence, public health/covid-19 safety, and many others. As we continue to eradicate systemic injustices in schools, we understand that our work is not done yet. We are dedicated to sustaining the voices and changes made by young people while valuing their ideas, work, and health and wellness.",
+            "img":"missionstatement.jpeg",
+            "button_text":"Learn More",
+            "button_href":"/take-action"
+        },
+        
+        {
+            "source":"focal-bg",
+            "header":"Join the Team",
+            "subheader":"Make an Impact",
+            "body":"See the variety of positions we have available and look into how you can empower your community through MN Teen Activists. ",
+            "button_text":"Join Today",
+            "button_href":"/join"
+
+        }
+    ],
+    "data":{
+        "team_members":[
+            {"name":"Aaliyah Murray","title":"Founder/President"},
+            {"name":"Gabby Hou","title":"First Vice President"},
+            {"name":"Yassin Bah","title":"Second Vice President"},
+            {"name":"Elija Norris-Holliday","title":"Treasurer"},
+            {"name":"Hawa Cabdullahi","title":"Secretary"},
+            {"name":"Jerome Treadwell","title":"Executive Director"},
+            {"name":"Racallis Totten","title":"Director"},
+            {"name":"Ezra Hudson","title":""},
+            {"name":"Isabella McCoy","title":""},
+            {"name":"Nedda Abuhadid","title":""},
+            {"name":"Eva Abuhadid","title":""}
+        ]
+
+    }
+
+
+}

@@ -1,0 +1,13 @@
+section 
+    div(class="flex large-uncenter:flex-wrap flex-col large-uncenter:flex-row small-center:justify-center large-uncenter:mx-5 py-10 w-[100%] mt-5")
+        each item in grid
+            div(class="large-uncenter:w-[30%] mb-4 bg-[#333] py-5 px-4 rounded-md large-uncenter:mx-3 small-center:w-[80%] small-center:mx-auto ")
+                a(class="text-[3em] headertext text-near-white" href="#") #{item["header"]}
+                h2(class="text-[2em] headertext text-aqua-blue") #{item["subheader"]}
+                a(href="#")
+                    img(class="object-cover min-w-[16%] my-3" id="img" src="../../img/"+item["img_route"])
+                
+                //p(class="ptext text-[0.9em] text-mid-gray mt-[1em]") #{item["description"]}
+                p(class="ptext text-[1.2em] text-mid-gray mt-[1em]") #{item["body"]}
+        else 
+            h2 No shop items found!

@@ -212,9 +212,17 @@ aside{
 	color: inherit;
 	text-decoration: none;
 }
+.report-title a:hover{
+	color:#088F99;
+	transition: 0.3s;
+}
 .report-title:hover{
 	color:#088F99;
 	transition: 0.3s;
+}
+.report-text:hover{
+	color:#088F99!important;
+	
 }
 
 .takeaction{
@@ -674,7 +682,7 @@ aside{
 	font-family: alternate-gothic-condensed-a, sans-serif;
 	font-weight: 600;
 	font-style: normal;
-	font-size:3.5em;
+	font-size:2.9em;
 	color: #04454A;
 	opacity:0.7;
 	transition: font-size 0.5s ease-in-out;
@@ -1068,7 +1076,7 @@ footer a:hover{
 		top:27em;
 	}
 }
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1199px){
 	.report{
 		display: none;
 	}
@@ -1185,7 +1193,9 @@ footer a:hover{
   }
   
   .actiontext h1{
-  	
+	font-family: alternate-gothic-condensed-a, sans-serif;
+    font-weight: 600;
+    font-style: normal;
   	font-size: 3.5em;
   }
   .navbar li{
@@ -1428,8 +1438,8 @@ footer a:hover{
 }
 @media only screen and (max-width: 980px){
 	.resources{
-		margin-bottom: 10em;
-		height: 110em;
+		margin-bottom: 5em;
+		height: 3em;
 		text-align: center;
 		justify-content: center;
 
@@ -1503,11 +1513,10 @@ footer a:hover{
 	}
 	
 	.resources{
-	
-	min-height: 80em;
+		min-height: 70em;
 	}
 	.tweeter h1{
-		font-size: 3.0em;
+		font-size: 2.7em;
 		bottom:20%;
 	}
 	.tweeter a{
@@ -1520,6 +1529,27 @@ footer a:hover{
 
 
 }
+
+
+
+@media only screen and (min-width: 1800px){
+	.jumbothird{
+		margin-top:-3em;
+	}
+	.tweeter h1{
+		bottom:30%;
+	}
+	.tweeter a{
+		bottom:20%;
+	}
+}
+
+@media only screen and (max-width:720px){
+	.tweeter h1{
+		font-size:2.5em;
+	}
+}
+@media only screen and (max-width:640px){.tweeter h1{font-size:2.3em;}}
 @media only screen and (max-width: 480px){
 	/*working bottom up*/
 	.footer{
@@ -1571,11 +1601,11 @@ footer a:hover{
 	}*/
 	
 	.tweeter{
-		min-height: 50em;
+		height: 50em;
 	}
 	.tweeter h1{
 		bottom:15%;
-		font-size: 2em;
+		font-size: 0.5em;
 	}
 	.tweeter a{
 		bottom:5%;
@@ -1593,7 +1623,7 @@ footer a:hover{
 	}
 	
 	.resources{
-		height: 120em;
+		height: 60em;
 	}
 	.actiontext h1{
 		font-size:40px;
@@ -1686,18 +1716,6 @@ footer a:hover{
 		margin-top: 3em;
 	}
 
-}
-
-@media only screen and (min-width: 1800px){
-	.jumbothird{
-		margin-top:-3em;
-	}
-	.tweeter h1{
-		bottom:30%;
-	}
-	.tweeter a{
-		bottom:20%;
-	}
 }
 
 

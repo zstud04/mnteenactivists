@@ -1,0 +1,10 @@
+extends general_layout.pug 
+include mixins/titlediv.pug
+include mixins/leftaside.pug
+include mixins/rightaside.pug
+include mixins/focalbg.pug
+include mixins/formelement.pug
+
+block body
+    +title-div(data["header"])
+    include includes/modulars.pug

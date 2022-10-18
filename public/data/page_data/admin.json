@@ -1,0 +1,35 @@
+{
+    "header":"Admin Login",
+    "sections":[
+        {
+            "source":"form-element",
+            "header":"DASHBOARD LOGIN",
+            "body":"Login to view and edit the dashboard for this site. The changes you can make depend on the permissions you have been granted. If you need a login to the dashboard or you forgot your login, contact administration.",
+            "instruction_header":"Login to Dashboard",
+            "instruction_body":"Enter the Username and Password associated with your admin account.",
+            "form_items":[
+                {
+                    "id":"inputUsername",
+                    "label":"Username",
+                    "meta":"input",
+                    "type":"text",
+                    "name":"username",
+                    "placeholder":"Username"
+                    
+                },
+                
+                {
+                    "id":"inputPassword",
+                    "label":"Password",
+                    "meta":"input",
+                    "type":"password",
+                    "name":"password",
+                    "placeholder":"Password"
+                }
+                
+            ],
+            "action":"/auth-dashboard"
+        }
+    ]
+
+}

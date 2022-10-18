@@ -1,0 +1,8 @@
+section(class="bg-[url('../../img/about-header.png')] bg-no-repeat bg-cover h-[42em] bg-top min-w-2xl")
+    div(class="bg-near-black absolute h-[42em] w-[100%] bg-opacity-70 grid place-items-center")
+        div(class="bg-[#222] bg-opacity-70  w-[70%] h-[80%] justify-center rounded-lg text-center small-center:w-[80%]")
+            h1#header(class="text-[4em] headertext text-near-white mt-10") #{header}
+            h2#subheader(class="text-[2em] headertext text-aqua-blue") #{subheader}
+            p#body(class="ptext text-[1.2em] text-mid-gray mt-[1em] px-20 small-center:px-5") #{body}
+            if button_text
+                a.btn.btn-lg.btn-outline-primary.zbutton(href=button_href role='button' class=" mt-4") #{button_text}

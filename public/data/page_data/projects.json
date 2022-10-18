@@ -1,0 +1,48 @@
+{
+    "header":"Projects",
+    "sections":[
+        {
+            "source":"title-div",
+            "header":"Our Projects"
+        },
+        {
+            "source":"grid",
+            "grid":[
+                {
+                    "header":"Project 1",
+                    "subheader":"A Subheader",
+                    "body":"body information about the topic",
+                    "button_text":"View More",
+                    "button_href":"#"
+
+                },
+                {
+                    "header":"Project 2",
+                    "subheader":"A Subheader",
+                    "body":"body information about the topic",
+                    "button_text":"View More",
+                    "button_href":"#"
+
+                },
+                {
+                    "header":"Project 3",
+                    "subheader":"A Subheader",
+                    "body":"body information about the topic body information about the topic body information about the topic vbody information about the topic",
+                    "button_text":"View More",
+                    "button_href":"#"
+
+                },
+                {
+                    "header":"Project 4",
+                    "subheader":"A Subheader",
+                    "body":"body information about the topic body information about the topic body information about the topic vbody information about the topic",
+                    "button_text":"View More",
+                    "button_href":"#"
+
+                }
+            ]
+        }
+        
+    ]
+
+}

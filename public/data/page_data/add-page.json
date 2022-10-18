@@ -1,0 +1,57 @@
+{
+    "header":"Add a Page",
+    "sections":[
+        {
+            "source":"form-element",
+            "header":"Page Routes",
+            "body":"",
+            "instruction_header":"Add a Page",
+            "instruction_body":"Add an additional page to the website",
+            "form_items":[
+                {
+                    "id":"pageRoute",
+                    "label":"Page Route",
+                    "meta":"input",
+                    "type":"text",
+                    "name":"route",
+                    "placeholder":"/example"
+                    
+                },
+                
+                {
+                    "id":"pageName",
+                    "label":"Page Name",
+                    "meta":"input",
+                    "type":"text",
+                    "name":"name",
+                    "placeholder":"Example Page"
+                },
+                
+
+                {
+                    "id":"pageType",
+                    "label":"Page Type",
+                    "meta":"select",
+                    "name":"type",
+                    "options":[
+                        {"value":"general","label":"General Page"},
+                        {"value":"shop_landing","label":"Shop Landing Page"},
+                        {"value":"blog_landing","label":"Blog Landing Page"}
+                    
+                    ]
+                },
+                {
+                    "id":"pageDescription",
+                    "label":"Brief Page Description",
+                    "meta":"textarea",
+                    "type":"text",
+                    "name":"description",
+                    "placeholder":""
+
+                }
+            ],
+            "action":"/dashboard/page-create"
+        }
+    ]
+
+}
