@@ -23,7 +23,7 @@ head
 //navbar
 nav.navbar.fixed-top.navbar-expand-xl.navbar-light.mnnav.p-0
   .container-fluid
-    a.navbar-brand(href='index.html')
+    a.navbar-brand(href='/')
       img.d-inline-block.align-text-top.customImgSize.logoimg(src='img/logobw.png' alt='' width='80' height='80')
     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
@@ -36,7 +36,7 @@ nav.navbar.fixed-top.navbar-expand-xl.navbar-light.mnnav.p-0
             | Chapters
           ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
             li
-              a.dropdown-item(href='/start-chapter') Start a Chapter
+              a.dropdown-item(href='/start-chapter') Join
             //- li
             //-   a.dropdown-item(href='#') Another action
             //- li
@@ -93,7 +93,7 @@ aside.report
       h3.highlightedgeneral A Group as Diverse as our Causes
       p
         | Our goal is to grow our social justice footprint, all across Minnesota. We want to bring fresh and bold community members to MN Teen Activists to help establish our mission throughout all schools in Minnesota. We need things like: social media, civic engagement, policy/curriculum, finances, etc.
-      a.btn.btn-lg.btn-outline-primary.cbuttonwide(href='#' role='button') Click to Find out More
+      a.btn.btn-lg.btn-outline-primary.cbuttonwide(href='/take-action' role='button') Click to Find out More
   img#protestimg(src='img/fistbg.png' alt='People protesting')
 // TAKE ACTION... DIV
 .takeaction
@@ -108,10 +108,10 @@ aside.report
     a.btn.btn-lg.btn-outline-primary.cbuttonwide.responsivezbutton(href='#' role='button') SEE MORE
   .jumbothird.jumbocenter(data-rellax-speed='0.5')
     img.actionicon(src='img/teachericon.png')
-    h2 Start a Chapter
+    h2 Become an Ambassador
     p
-      | Start by creating a MN Teen Activist chapter to help bring the change to your school that you want to see. Chapters can be formed in any middle or highschool through the state of Minnesota. Other states may qualify.
-    a.btn.btn-lg.btn-outline-primary.cbuttonwide.responsivezbutton(href='/start-chapter' role='button') Explore
+      | It is our goal to reach across the entire state of Minnesota, but in order to do so we need your help. Become a Minnesota Teen Activists ambassador and represent your school district today, or simply learn more by clicking the apply button below.
+    a.btn.btn-lg.btn-outline-primary.cbuttonwide.responsivezbutton(href='/start-chapter' role='button') Apply
   .jumbothird.jumboright(data-rellax-speed='0.5')
     img.actionicon(src='img/hearticon.png')
     h2 Join the Team
@@ -142,14 +142,39 @@ aside.report
       p
         | Check and subscribe out our blog to see what we've been up to, and what our plans are for the future. Updated Monday of every week. Beginning 11/01/22
       a.btn.btn-lg.btn-outline-primary.zbutton(href='#' role='button') View Blog
+
 // TWEET DIV
+
 .tweeter
-  h1
-    | &ldquo;Youth voices matter because we are a generation of advocates, activists and innovators who do not have the luxury of waiting to change the world we live in.&rdquo;
-  a.join-cause(href='#') Sign Up for Updates
+  .tweet-text
+    h1
+      | &ldquo;Youth voices matter because we are a generation of advocates, activists and innovators who do not have the luxury of waiting to change the world we live in.&rdquo;
+    h3 
+      | Sign up for updates and connect with us
+    form(class="tweet-form")
+      input#fname(type='email' class="form-element-input w-[70%] mx-auto px-6 py-2 rounded-md" name='email' placeholder='Email')
+      input#lname(type='text' class="form-element-input w-[70%] mx-auto px-6 py-2 rounded-md" name='zipcode' placeholder='Zip Code')
+      button.btn.btn-lg.btn-outline-primary.zbutton.join-cause(href='#' type="submit") Sign Up for Updates
+
+    
+
+.instaembed(class="mx-auto py-[20em] mt-[20em] width-[100%] flex align-center box-border")
+  center(id="insta-frame")
+    div(class="insta-text")
+      h1 Check us out on Instagram
+      p Visit us on the platform where the movement got its start, and even find more ways to get involved.
+    iframe(src='//instagram.com/p/CkESwOsvAqK/embed/' frameborder='20px' scrolling='yes' allowtransparency='true' class="mx-auto width-[600px]")
+
+  //- blockquote.instagram-media( data-instgrm-version='14' class="mx-auto mt-[3em] width-[400px]") 
+  //-   // replace this href with the link to the post
+  //-   a(href='https://www.instagram.com/p/CWA2UbCs6x_/')
+
+
+
 include includes/footer.pug
 script(src='js/scroll.js')
 script(type='text/javascript' src='js/typewriter.js')
+script(src='//www.instagram.com/embed.js')
 script(src='https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js')
 script.
   var rellax = new Rellax('.rellax');

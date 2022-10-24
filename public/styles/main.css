@@ -649,7 +649,7 @@ aside{
 
 .tweeter{
 	width:100%;
-	min-height:58em;
+	min-height:64em;
 	background-image: url("../img/tweetbg.png");
 	
 
@@ -678,7 +678,7 @@ aside{
 	position: absolute;
 	transform: translate(-50%, 0);
 
-	bottom:18%;
+	bottom:25%;
 	font-family: alternate-gothic-condensed-a, sans-serif;
 	font-weight: 600;
 	font-style: normal;
@@ -893,6 +893,7 @@ footer a:hover{
 	vertical-align: top;
 }
 
+
 /* Footer left */
 
 .footer-distributed .footer-left{
@@ -994,7 +995,7 @@ footer a:hover{
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
+.footer-distributed .{
 	width: 20%;
 }
 
@@ -1017,8 +1018,18 @@ footer a:hover{
 .footer-distributed .footer-icons{
 	margin-top: 25px;
 }
+.footer-icons img{
+	object-fit: cover;
+	max-width:50px;
+}
+#instalogo{
+	max-width:68px;
+}
+#tiktoklogo{
+	max-width:50px;
+}
 
-.footer-distributed .footer-icons a{
+/* .footer-distributed .footer-icons a{
 	display: inline-block;
 	width: 35px;
 	height: 35px;
@@ -1033,7 +1044,8 @@ footer a:hover{
 
 	margin-right: 3px;
 	margin-bottom: 5px;
-}
+} */
+
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
@@ -1517,7 +1529,7 @@ footer a:hover{
 	}
 	.tweeter h1{
 		font-size: 2.7em;
-		bottom:20%;
+		bottom:26%;
 	}
 	.tweeter a{
 		bottom:10%;
@@ -1718,6 +1730,55 @@ footer a:hover{
 
 }
 
+.instaembed{
+	
+	padding: 5em 0;
+	background-color: #202020;
+}
+.instaembed h1{
+	font-family: alternate-gothic-condensed-a, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size:4em;
+	text-transform: uppercase;
+}
+.instaembed p{
+	font-size:1.1em;
+}
+.insta-text{
+	margin:4em 0;
+	color:white;
+	padding: 0 4em;
+	
+}
 
+iframe{
+	border-radius: 10px;
+	filter: drop-shadow(15px 15px 4px #111);	
+}
+
+.form-element-input{
+	border-radius:10px;
+	border:none;
+	width:15em;
+}
+.tweet-form{
+	margin:auto;
+	display:block;
+	margin-bottom:20em;
+}
+
+.tweet-form *{
+	display:block;
+	text-align: center;
+	color:gray;
+	margin:auto;
+	margin-bottom:1em;
+}
+.tweet-form button{
+	font-size:1.3em;
+	color:#04454A;
+	margin-top:2em;
+}
 
 
