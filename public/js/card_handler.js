@@ -42,7 +42,7 @@ window.onload=function(){
             else {
                 
                 stripeTokenHandler(res.token);
-                alert("Thank you for your purchase! You will recieve a confirmation email soon.")
+                alert(" for your purchase! You will recieve a confirmation email soon.")
                 window.location.href='/'
             }
         })
