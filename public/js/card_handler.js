@@ -1,4 +1,4 @@
-const stripe=Stripe('pk_test_51Ksg90JjerZXmgTEy4Li4I010R5pQoroENKyS0BNXJSB6383jEz7gcFZn4tr6g71VtVRmyQO1ahTnCdKB9VPAYzf00HeEk9LRO')
+const stripe=Stripe('pk_live_51Ksg90JjerZXmgTEGEYGdXlCYPuDtxvogdMXwR1JmZt1Lsar4tYKA2WTto9SdOZwpPZVvF7JN0bvXhYurO2vyIG500BE9IXHuT')
 const elements=stripe.elements()
 
 console.log("hi!!")

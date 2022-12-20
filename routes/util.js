@@ -2,7 +2,7 @@
 const express = require('express');
 const { append } = require('express/lib/response');
 const router = express.Router();
-const dev_secret_key="sk_test_51Ksg90JjerZXmgTEvrUj3FtIHBk7ZfE85Vu5QZbLuRAQ5mpGsTWU5rKBY6oa1qgpaHDJ4ltJwu8UpFidpnytGreG00m8QDYpLz"
+const dev_secret_key="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"
 const stripe=require('stripe')(dev_secret_key)
 const bodyParser= require("body-parser")
 const authentication = require('../util/google_auth');
