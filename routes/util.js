@@ -2,7 +2,7 @@
 const express = require('express');
 const { append } = require('express/lib/response');
 const router = express.Router();
-const dev_secret_key="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"
+const dev_secret_key=""
 const stripe=require('stripe')(dev_secret_key)
 const bodyParser= require("body-parser")
 const authentication = require('../util/google_auth');
